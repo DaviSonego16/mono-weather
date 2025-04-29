@@ -1,0 +1,26 @@
+const axios = require('axios');
+
+const BASE_URL = 'https://jsonplaceholder.typicode.com/todos/';
+
+async function fetchData(res, id) {
+  try {
+    let url = BASE_URL
+    if (id) {
+      url = `${BASE_URL}/${id}`
+    }
+    const response = await axios.get(url);
+    res.json(response.data);
+  } catch (error) {
+    console.error(error.response?.data || error.message);
+    res.status(error.response?.status || 500).json({ error: 'Erro ao buscar dados' });
+  }
+}
+
+exports.getAll = (req, res) => {
+  fetchData(res);
+};
+
+exports.getOne = (req, res) => {
+    const { id } = req.params;
+    fetchData(res, id);
+  };
