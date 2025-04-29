@@ -7,8 +7,8 @@
 1. **Clone o repositório**
 
 ```bash
-git clone https://github.com/seu-usuario/meu-backend.git
-cd meu-backend
+git clone https://github.com/seu-usuario/mono-weather.git
+cd mono-weather/api-backend
 ```
 
 2. **Instale as dependências**:
@@ -38,13 +38,13 @@ http://localhost:3000
 1. **Build da imagem Docker**:
 
 ```bash
-docker build -t meu-backend-app .
+docker build -t api-backend-app .
 ```
 
 2. **Rode o container**:
 
 ```bash
-docker run -p 3000:3000 meu-backend-app
+docker run -p 3000:3000 api-backend-app
 ```
 
 ✅ Pronto! Agora o backend estará disponível em:
