@@ -1,14 +1,10 @@
-# mono-weather
+# mono-teste
 
-# 📚 Meu Backend Express - API com Docker
+# api
 
-Este é um projeto de backend básico usando **Node.js**, **Express** e containerizado com **Docker**.
+##  Como rodar a aplicação
 
----
-
-## 🚀 Como rodar a aplicação **sem Docker**
-
-1. **Clone o repositório** (caso ainda não tenha feito):
+1. **Clone o repositório**
 
 ```bash
 git clone https://github.com/seu-usuario/meu-backend.git
@@ -26,10 +22,6 @@ npm install
 ```bash
 npm start
 ```
-ou
-```bash
-node server.js
-```
 
 4. **Acesse a API**:
 
@@ -41,7 +33,7 @@ http://localhost:3000
 
 ---
 
-## 🐳 Como rodar a aplicação **usando Docker**
+## Como rodar a aplicação **usando Docker**
 
 1. **Build da imagem Docker**:
 
@@ -60,52 +52,3 @@ docker run -p 3000:3000 meu-backend-app
 ```
 http://localhost:3000
 ```
-
----
-
-## 🛤️ Rotas disponíveis
-
-| Método | Endpoint             | Descrição                                       |
-|:------:|:--------------------- |:----------------------------------------------- |
-| GET    | `/`                   | Página inicial (Home)                          |
-| GET    | `/sobre`               | Sobre o projeto                                |
-| GET    | `/weather`             | Consulta clima atual (mock)                    |
-| GET    | `/forecast`            | Consulta previsão do tempo (mock)              |
-| GET    | `/air_pollution`       | Consulta qualidade do ar (mock)                |
-| GET    | `/air_pollution/history` | Consulta histórico de poluição (mock)         |
-| GET    | `/weather/coords`      | Consulta clima por coordenadas (mock)          |
-| GET    | `/buscar/:id`          | Buscar recurso pelo ID passado na URL          |
-
----
-
-## 📦 Estrutura do projeto
-
-```bash
-meu-backend/
-├── server.js
-├── routes/
-│   └── index.js
-├── controllers/
-│   └── exemploController.js
-├── package.json
-└── Dockerfile
-```
-
----
-
-## 📄 Requisitos
-
-- [Node.js](https://nodejs.org/)
-- [Docker](https://www.docker.com/) (opcional, se quiser rodar com container)
-
----
-
-## ✨ Observações
-
-- A aplicação está configurada para rodar na porta **3000**.
-- Se necessário alterar a porta, edite a variável de ambiente `PORT` ou modifique diretamente no `server.js`.
-
----
-
-# 🔥 Bora rodar!  
-Se tiver qualquer dúvida, só abrir uma issue ou perguntar!
