@@ -1,10 +1,12 @@
-# api
 
-##  Clonando o repositório
+#  Clonando o repositório
 
 ```bash
 git clone https://github.com/seu-usuario/mono-weather.git
 ```
+
+# API
+
 
 ##  Como rodar a aplicação
 
@@ -58,7 +60,7 @@ http://localhost:3000
 
 
 
-# app
+# APP
 
 ##  Como rodar o aplicativo
 
