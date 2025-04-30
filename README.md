@@ -76,7 +76,9 @@ cd mono-weather/flutter_app
 flutter pub get
 ```
 
-3. **Rode o aplicativo**:
+3. **Conecte seu dispositivo mobile ou inicie o emulador**:
+
+4. **Rode o aplicativo**:
 
 ```bash
 flutter run
