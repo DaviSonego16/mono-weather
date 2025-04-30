@@ -2,12 +2,9 @@ const axios = require('axios');
 
 const BASE_URL = 'https://jsonplaceholder.typicode.com/todos/';
 
-async function fetchData(res, id) {
+async function fetchData(res) {
   try {
     let url = BASE_URL
-    if (id) {
-      url = `${BASE_URL}/${id}`
-    }
     const response = await axios.get(url);
     res.json(response.data);
   } catch (error) {
