@@ -1,11 +1,16 @@
 # api
 
-##  Como rodar a aplicação
-
-1. **Clone o repositório**
+##  Clonando o repositório
 
 ```bash
 git clone https://github.com/seu-usuario/mono-weather.git
+```
+
+##  Como rodar a aplicação
+
+1. **Acesse a pasta da api**
+
+```bash
 cd mono-weather/api-backend
 ```
 
