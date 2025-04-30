@@ -52,3 +52,27 @@ docker run -p 3000:3000 api-backend-app
 ```
 http://localhost:3000
 ```
+
+
+
+# app
+
+##  Como rodar o aplicativo
+
+1. **Acesse a pasta do aplicativo com a api rodando**
+
+```bash
+cd mono-weather/flutter_app
+```
+
+2. **Instale as dependências**:
+
+```bash
+flutter pub get
+```
+
+3. **Rode o aplicativo**:
+
+```bash
+flutter run
+```

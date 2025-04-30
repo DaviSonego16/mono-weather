@@ -19,8 +19,3 @@ async function fetchData(res, id) {
 exports.getAll = (req, res) => {
   fetchData(res);
 };
-
-exports.getOne = (req, res) => {
-    const { id } = req.params;
-    fetchData(res, id);
-  };

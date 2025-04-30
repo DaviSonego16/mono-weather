@@ -1,17 +1,18 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import '../models/tarefa.dart';
 
 class ApiService {
-  final String baseUrl = 'http://localhost:3000'; // A URL da sua API Express
+  final String apiUrl = 'http://10.0.2.2:3000/data';
 
-  Future<Map<String, dynamic>> fetchData(String endpoint) async {
-    final response = await http.get(Uri.parse('$baseUrl/$endpoint'));
+  Future<List<Tarefa>> fetchTodos() async {
+    final response = await http.get(Uri.parse(apiUrl));
 
     if (response.statusCode == 200) {
-      // Se a requisição for bem-sucedida, parse os dados
-      return json.decode(response.body);
+      final List<dynamic> data = json.decode(response.body);
+      return data.map((item) => Tarefa.fromJson(item)).toList();
     } else {
-      throw Exception('Falha ao carregar dados');
+      throw Exception('Erro ao carregar tarefas');
     }
   }
 }
